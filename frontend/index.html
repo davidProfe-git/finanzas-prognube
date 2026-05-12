@@ -1,38 +1,61 @@
 <!DOCTYPE html>
-<html lang="en">
-
+<html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>finanzas</title>
-    <link rel="stylesheet" href="css/style.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Admin Gastos</title>
+  <link rel="stylesheet" href="css/style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500&display=swap" rel="stylesheet"/>
 </head>
-
 <body>
-    <div class="contenedor">
-        <h1 class="titulo">Admin gastos</h1>
-        <div class="formulario">
-            <input type="text" name="" id="" placeholder="Ingresos">
-            <select name="" id="">
-                <option value="">arriendo</option>
-                <option value="">comida</option>
-                <option value="">servicios</option>
-                <option value="">transporte</option>
-                <option value="">otros</option>
-            </select>
-            <input type="date" name="" id="">
 
-        </div>
+  <div id="contenedor">
 
-        <div id="botonera">
-            <button id="ing">Ingresos</button>
-            <button id="gas">gastos</button>
-        </div>
-        
+    <h1 id="titulo">Admin gastos</h1>
+
+    <div id="formulario">
+
+      <div class="campo">
+        <input
+          type="number"
+          id="monto"
+          class="entrada"
+          placeholder="Ingresos"
+          min="0"
+          step="0.01"
+        />
+      </div>
+
+      <div class="campo">
+        <select id="categoria" class="entrada seleccion">
+          <option value="salario">salario</option>
+          <option value="arriendo">arriendo</option>
+          <option value="alimentacion">alimentación</option>
+          <option value="transporte">transporte</option>
+          <option value="salud">salud</option>
+          <option value="entretenimiento">entretenimiento</option>
+          <option value="servicios">servicios</option>
+          <option value="educacion">educación</option>
+          <option value="otro">otro</option>
+        </select>
+      </div>
+
+      <div class="campo">
+        <input
+          type="date"
+          id="fecha"
+          class="entrada"
+        />
+      </div>
+
+      <div id="grupo-botones">
+        <button id="boton-ingresos" class="boton boton-ingreso">Ingresos</button>
+        <button id="boton-gastos"   class="boton boton-gasto">gastos</button>
+      </div>
 
     </div>
 
+  </div>
 
 </body>
-
 </html>
